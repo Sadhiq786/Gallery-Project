@@ -15,7 +15,7 @@ function App() {
     <div className={`toggleColor ${theme}`}>
       <Router>
         <Routes>
-          <Route path="/" element={<Navigate to="/gallery" replace />} />
+          <Route path="/" element={<Search/>} />
           <Route path="/gallery" element={<Search />} />
           <Route path="/gallery/search/:query" element={<Search />} />
           <Route path="*" element={<NotFound />} />
